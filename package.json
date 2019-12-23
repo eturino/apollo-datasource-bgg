@@ -1,14 +1,14 @@
 {
-  "name": "__REPLACE_ME_WITH_PACKAGE_NAME__",
+  "name": "apollo-datasource-bgg",
   "version": "0.0.0-development",
-  "author": "__REPLACE_ME_WITH_AUTHOR_NAME__ <__REPLACE_ME_WITH_AUTHOR_EMAIL__>",
-  "description": "__REPLACE_ME_WITH_PACKAGE_DESCRIPTION__",
+  "author": "Eduardo Turiño <eturino@eturino.com>",
+  "description": "BoardGameGeek Apollo Datasource, using axios to load the info from XMLAPI2",
   "main": "build/main/index.js",
   "typings": "build/main/index.d.ts",
   "module": "build/module/index.js",
-  "repository": "__REPLACE_ME_WITH_REPO_URL__",
-  "homepage": "__REPLACE_ME_WITH_REPO_URL__",
-  "bugs": "__REPLACE_ME_WITH_REPO_URL_ISSUES__",
+  "repository": "https://github.com/eturino/apollo-datasource-bgg",
+  "homepage": "https://github.com/eturino/apollo-datasource-bgg",
+  "bugs": "https://github.com/eturino/apollo-datasource-bgg/issues",
   "license": "MIT",
   "keywords": [],
   "scripts": {
@@ -50,7 +50,9 @@
   "engines": {
     "node": ">=10.0"
   },
-  "dependencies": {},
+  "dependencies": {
+    "apollo-datasource": "^0.6.3"
+  },
   "devDependencies": {
     "@bitjson/npm-scripts-info": "^1.0.0",
     "@commitlint/cli": "^8.2.0",

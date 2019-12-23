@@ -1,6 +1,6 @@
 env:
   global:
-    - CC_TEST_REPORTER_ID=__REPLACE_ME_WITH_CODE_CLIMATE_TEST_REPORTER_ID__
+    - CC_TEST_REPORTER_ID=636bc83aa5a1362c6d4c6d589583cd2bddf4a91dc4188e410e10ad89c7c2437c
 sudo: false
 language: node_js
 node_js:
