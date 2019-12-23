@@ -1,6 +1,6 @@
 {
   "name": "__REPLACE_ME_WITH_PACKAGE_NAME__",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "author": "__REPLACE_ME_WITH_AUTHOR_NAME__ <__REPLACE_ME_WITH_AUTHOR_EMAIL__>",
   "description": "__REPLACE_ME_WITH_PACKAGE_DESCRIPTION__",
   "main": "build/main/index.js",
@@ -32,7 +32,8 @@
     "version": "standard-version",
     "reset": "git clean -dfx -e .idea && git reset --hard && yarn",
     "clean": "trash build test",
-    "prepare-release": "run-s reset test doc:html version doc:publish"
+    "prepare-release": "run-s reset test doc:html version doc:publish",
+    "semantic-release": "semantic-release"
   },
   "scripts-info": {
     "info": "Display information about the package scripts",
@@ -66,6 +67,7 @@
     "open-cli": "^5.0.0",
     "prettier": "^1.18.2",
     "replace-in-file": "^5.0.2",
+    "semantic-release": "^15.14.0",
     "standard-version": "^7.0.0",
     "strip-json-comments": "^3.0.1",
     "trash-cli": "^3.0.0",

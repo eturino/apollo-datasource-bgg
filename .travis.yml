@@ -19,3 +19,18 @@ after_script:
 # after_success:
 #   - npm run cov:send
 #   - npm run cov:check
+
+jobs:
+  include:
+    # Define the release stage that runs semantic-release
+    - stage: release
+      node_js:
+        - "10"
+        - "12"
+        # Advanced: optionally overwrite your default `script` step to skip the tests
+      # script: skip
+      deploy:
+        provider: script
+        skip_cleanup: true
+        script:
+          - npx semantic-release
