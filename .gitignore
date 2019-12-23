@@ -6,6 +6,7 @@ src/**.js
 yarn-error.log
 
 coverage
+cc-test-reporter
 .nyc_output
 *.log
 
