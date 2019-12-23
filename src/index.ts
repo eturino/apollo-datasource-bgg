@@ -1,11 +1,7 @@
 import { DataSource, DataSourceConfig } from "apollo-datasource";
 
 export class ApolloDatasourceBGG<TContext = any> extends DataSource<TContext> {
-  context!: TContext;
-
-  constructor() {
-    super();
-  }
+  public context!: TContext;
 
   public initialize(config: DataSourceConfig<TContext>): void {
     this.context = config.context;
