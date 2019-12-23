@@ -1,7 +1,7 @@
 import { DataSource, DataSourceConfig } from "apollo-datasource";
 
 export class ApolloDatasourceBGG<TContext = any> extends DataSource<TContext> {
-  protected context!: TContext;
+  context!: TContext;
 
   constructor() {
     super();

@@ -20,6 +20,7 @@ describe("ApolloDatasourceBGG", () => {
     const context = { something: 1 };
     const ds = new ApolloDatasourceBGG<typeof context>();
     ds.initialize({ context, cache });
-    expect(ds);
+    expect(ds).toBeInstanceOf(ApolloDatasourceBGG);
+    expect(ds.context).toEqual(context);
   });
 });
