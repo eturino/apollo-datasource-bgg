@@ -29,10 +29,9 @@
     "doc:html": "typedoc --theme ./node_modules/typedoc-themes-color/theme src/ --exclude **/*.spec.ts --target ES6 --mode file --out build/docs",
     "doc:json": "typedoc src/ --exclude **/*.spec.ts --target ES6 --mode file --json build/docs/typedoc.json",
     "doc:publish": "gh-pages -m \"[ci skip] Updates\" -d build/docs",
-    "version": "standard-version",
     "reset": "git clean -dfx -e .idea && git reset --hard && yarn",
     "clean": "trash build test",
-    "prepare-release": "run-s reset test doc:html version doc:publish",
+    "prepare-release": "run-s reset test doc:html doc:publish",
     "semantic-release": "semantic-release"
   },
   "scripts-info": {
@@ -43,7 +42,6 @@
     "watch": "Watch and rebuild the project on save, then rerun relevant tests",
     "doc": "Generate HTML API documentation and open it in a browser",
     "doc:json": "Generate API documentation in typedoc JSON format",
-    "version": "Bump package.json version, update CHANGELOG.md, tag release",
     "reset": "Delete all untracked files (except `.idea`) and reset the repo to the last commit",
     "prepare-release": "One-step: clean, build, test, publish docs, and prep a release"
   },
@@ -71,7 +69,6 @@
     "prettier": "^1.18.2",
     "replace-in-file": "^5.0.2",
     "semantic-release": "^15.14.0",
-    "standard-version": "^7.0.0",
     "strip-json-comments": "^3.0.1",
     "trash-cli": "^3.0.0",
     "ts-jest": "^24.0.2",
