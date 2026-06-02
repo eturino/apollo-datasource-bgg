@@ -1,4 +1,4 @@
-import { DataSource, DataSourceConfig } from "apollo-datasource";
+import { DataSource, type DataSourceConfig } from "apollo-datasource";
 
 export class ApolloDatasourceBGG<TContext = any> extends DataSource<TContext> {
   public context!: TContext;

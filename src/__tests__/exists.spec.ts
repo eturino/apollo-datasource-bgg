@@ -6,8 +6,8 @@ const cache = {
   set: (
     _key: string,
     _value: string,
-    _options?: { ttl?: number }
-  ): Promise<void> => Promise.resolve()
+    _options?: { ttl?: number },
+  ): Promise<void> => Promise.resolve(),
 };
 
 describe("ApolloDatasourceBGG", () => {
